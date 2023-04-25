@@ -1,6 +1,6 @@
 {
   "name": "@akmyradov/cloudstorage",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a Cloud Storage npm package that makes it easier with interacting with Cloud Storage providers. eg. Google Cloud Storage",
   "keywords": [
     "cloud storage",
