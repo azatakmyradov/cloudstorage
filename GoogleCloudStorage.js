@@ -19,7 +19,6 @@ class GoogleCloudStorage {
             const file = this.bucket.file(this.destination + name);
             const stream = file.createWriteStream();
 
-            // Pipe the file data to the writable stream
             stream.on('finish', () => {
                 resolve(file);
             });
@@ -33,7 +32,7 @@ class GoogleCloudStorage {
     }
 
     delete(name) {
-        return this.bucket.file(this.destination + name).delete()
+        return this.bucket.file(this.destination + name).delete();
     }
 
     get(name) {

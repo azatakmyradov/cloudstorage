@@ -1,6 +1,6 @@
 {
   "name": "@akmyradov/cloudstorage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a Cloud Storage npm package that makes it easier with interacting with Cloud Storage providers. eg. Google Cloud Storage",
   "keywords": [
     "cloud storage",
@@ -14,6 +14,8 @@
   "author": "Azat Akmyradov",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.319.0",
+    "@aws-sdk/s3-request-presigner": "^3.319.0",
     "@google-cloud/storage": "^6.9.5",
     "request": "^2.88.2"
   }

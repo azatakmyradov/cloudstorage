@@ -4,6 +4,7 @@
 | Supported Services: |
 | ----------- |
 | Google Cloud Storage | 
+ | Amazon S3 Storage   |
 | ***More to come...   | 
 
 ## Features
@@ -26,16 +27,30 @@ Run:
 npm install @akmyradov/cloudstorage multer
 `
 
-Example:
+Example for Google Cloud:
 
 ```javascript
-import { Storage, GoogleProvider} from '@akmyradov/cloudstorage';
+import { Storage, GoogleCloudStorage} from '@akmyradov/cloudstorage';
 
 let storage = new Storage(new GoogleProvider(
     'project-id',
     'bucket-name',
     'path/to/service-account.json',
-    'destination-path'
+    'destination-folder-path'
+));
+```
+
+Example for Amazon S3 Storage:
+
+```javascript
+import { Storage, AmazonS3Storage} from '@akmyradov/cloudstorage';
+
+const storage = new Storage(new AmazonS3Storage(
+    'region-name',
+    'bucket-name',
+    'access-key',
+    'access-secret-key',
+    'destination-folder-path'
 ));
 ```
 
