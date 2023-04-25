@@ -1,0 +1,20 @@
+{
+  "name": "@akmyradov/cloudstorage",
+  "version": "0.0.1",
+  "description": "This is a Cloud Storage npm package that makes it easier with interacting with Cloud Storage providers. eg. Google Cloud Storage",
+  "keywords": [
+    "cloud storage",
+    "storage",
+    "google cloud storage"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Azat Akmyradov",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^6.9.5",
+    "request": "^2.88.2"
+  }
+}
